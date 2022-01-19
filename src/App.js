@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Popup from "./components/Popup";
+import "./stylesheets/App.css";
 
 function App() {
+  const showPopup = (name) => {
+    document.querySelector(name).classList.remove("hidden");
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className="show-modal" onClick={showPopup.bind(this, ".sign-up")}>
+        Sign-up
+      </button>
+      <Popup name="sign-up" />
     </div>
   );
 }

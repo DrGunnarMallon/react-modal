@@ -1,17 +1,16 @@
 import Popup from "./components/Popup";
 import "./stylesheets/App.css";
+import { useState } from "react";
 
 function App() {
-  const showPopup = (name) => {
-    document.querySelector(name).classList.remove("hidden");
-  };
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="App">
-      <button className="show-modal" onClick={showPopup.bind(this, ".sign-up")}>
-        Sign-up
+      <button className="show-modal" onClick={() => setShowModal(true)}>
+        Cats?
       </button>
-      <Popup name="sign-up" />
+      {showModal && <Popup name="sign-up" showModal={setShowModal} />}
     </div>
   );
 }

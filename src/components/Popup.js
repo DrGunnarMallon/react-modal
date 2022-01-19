@@ -1,29 +1,30 @@
-import { useEffect } from "react";
-
-export default function Popup(props) {
-  const closeModal = (event) => document.querySelector(`.${props.name}`).classList.add("hidden");
-
+export default function Popup({ showModal, name }) {
   const keyDownHandler = (event) => {
-    if (event.key === "Escape") closeModal(null);
+    if (event.key === "Escape") showModal(false);
   };
   document.addEventListener("keydown", keyDownHandler);
 
   return (
-    <div className={`popup hidden ${props.name}`}>
+    <div className={`popup ${name}`}>
       <div className="modal">
-        <button className="close-modal" onClick={closeModal}>
+        <button className="close-modal" onClick={() => showModal(false)}>
           &times;
         </button>
-        <h1>Hi, I am a popup</h1>
+        <h1>Cats are awesome!</h1>
         <p>
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah blah blah blah blah blah blah blah
+          Hide when guests come over. Let me in let me out let me in let me out let me in let me out
+          who broke this door anyway ptracy litter box is life. Under the bed i am the best but go
+          crazy with excitement when plates are clanked together signalling the arrival of cat food
+          or i love cats i am one wake up scratch humans leg for food then purr then i have a and
+          relax sweet beast, or sleep on keyboard.
         </p>
+        <div className="btns">
+          <button className="modal-btn" onClick={() => showModal(false)}>
+            Agreed
+          </button>
+        </div>
       </div>
-      <div className="overlay" onClick={closeModal}></div>
+      <div className="overlay" onClick={() => showModal(false)}></div>
     </div>
   );
 }

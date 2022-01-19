@@ -53,10 +53,6 @@ p {
   font-size: 1.8rem;
 }
 
-.hidden {
-  display: none;
-}
-
 .modal {
   position: absolute;
   top: 50%;

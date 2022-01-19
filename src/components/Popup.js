@@ -5,7 +5,7 @@ export default function Popup({ showModal, name }) {
   document.addEventListener("keydown", keyDownHandler);
 
   return (
-    <div className={`popup ${name}`}>
+    <div className="popup">
       <div className="modal">
         <button className="close-modal" onClick={() => showModal(false)}>
           &times;

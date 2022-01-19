@@ -21,11 +21,20 @@ body {
   background: linear-gradient(to top left, #2888b4, #6fb0d5);
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
 .show-modal {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.75rem 3.5rem;
-  margin: 5rem 2rem;
+  margin: 15rem 2rem;
   border: none;
   background-color: #fff;
   color: #444;
@@ -42,15 +51,6 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-p {
-  font-size: 1.8rem;
 }
 
 .modal {

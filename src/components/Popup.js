@@ -1,4 +1,4 @@
-export default function Popup({ showModal, name }) {
+export default function Popup({ showModal, blurred }) {
   const keyDownHandler = (event) => {
     if (event.key === "Escape") showModal(false);
   };
@@ -10,7 +10,7 @@ export default function Popup({ showModal, name }) {
         <button className="close-modal" onClick={() => showModal(false)}>
           &times;
         </button>
-        <h1>Cats are awesome!</h1>
+        <h1>Cats are awesome</h1>
         <p>
           Hide when guests come over. Let me in let me out let me in let me out let me in let me out
           who broke this door anyway ptracy litter box is life. Under the bed i am the best but go
@@ -18,11 +18,9 @@ export default function Popup({ showModal, name }) {
           or i love cats i am one wake up scratch humans leg for food then purr then i have a and
           relax sweet beast, or sleep on keyboard.
         </p>
-        <div className="btns">
-          <button className="modal-btn" onClick={() => showModal(false)}>
-            Agreed
-          </button>
-        </div>
+        <button className="modal-btn" onClick={() => showModal(false)}>
+          Meouw
+        </button>
       </div>
       <div className="overlay" onClick={() => showModal(false)}></div>
     </div>

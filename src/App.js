@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <button className="show-modal" onClick={() => setShowModal(true)}>
-        What are cats?
+        Cats are ...
       </button>
-      {showModal && <Popup showModal={setShowModal} />}
+      {showModal && <Popup showModal={setShowModal} blurred={true} />}
     </div>
   );
 }

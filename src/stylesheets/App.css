@@ -1,11 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -14,27 +9,25 @@ body {
   color: #333;
   line-height: 1.5;
   height: 100vh;
-  position: relative;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   background: linear-gradient(to top left, #2888b4, #6fb0d5);
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .show-modal {
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  padding: 1.75rem 3.5rem;
-  margin: 15rem 2rem;
+  padding: 1rem 2.5rem;
+  margin: 10rem 2rem;
   border: none;
   background-color: #fff;
   color: #444;
@@ -46,7 +39,7 @@ p {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
-  font-size: 5rem;
+  font-size: 3rem;
   color: #333;
   cursor: pointer;
   border: none;
@@ -61,9 +54,8 @@ p {
   width: 50%;
 
   background-color: white;
-  padding: 6rem;
+  padding: 4rem 3rem 2rem;
   border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
 
@@ -78,20 +70,12 @@ p {
   z-index: 5;
 }
 
-.btns {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 30px;
-}
-
 .modal-btn {
   padding: 10px;
-  font-size: 2rem;
-  border-radius: 0.5rem;
-  width: max(30%, 8rem);
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  width: 8rem;
   border: 1px solid #888;
   cursor: pointer;
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 1.4rem;
 }
